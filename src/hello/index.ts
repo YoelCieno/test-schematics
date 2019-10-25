@@ -7,16 +7,22 @@ import { strings } from '@angular-devkit/core';
 export function hello(_options: HelloSchematics): Rule {
   
   return (tree: Tree, _context: SchematicContext) => {
-    console.log('tree', tree);
+
     const sourceTemplates = url('./files');
     
     const sourceParametrizedTemplates = apply(sourceTemplates, [
       template({
         ..._options,
-        ...strings
+        ...strings,
+        addExclamation
       })
     ])
     
-    return mergeWith(sourceParametrizedTemplates);
+    function addExclamation(value: string): string {
+      return value + '!';
+    }
+
+    
+    return mergeWith(sourceParametrizedTemplates)(tree, _context);
   };
 }

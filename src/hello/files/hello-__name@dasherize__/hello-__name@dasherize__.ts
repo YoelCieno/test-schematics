@@ -2,6 +2,7 @@
   selector: 'hello-<%= dasherize(name) %>'
 })
 
-export class Hello<%= classify(name) %> Component {
+export class Hello <%= classify(name) %> <%= addExclamation(name) %> Component {
+
   
 }
