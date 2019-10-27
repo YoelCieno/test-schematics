@@ -2,4 +2,4 @@
   selector: 'crud-<%= dasherize(name) %>'
 })
 
-export class Crud <%= classify(name) %> <%= addExclamation(name) %> Component {}
+export class <%= classify(name) %> {}
