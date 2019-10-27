@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "HelloSchematics",
+  "title": "CRUD Options Schema",
+  "description": "First crud",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The first CRUD",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What verb do we want to use?"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

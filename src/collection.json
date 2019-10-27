@@ -2,9 +2,14 @@
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "hello": {
-      "description": "A blank schematic.",
+      "description": "A hello schematic.",
       "factory": "./hello/index#hello",
       "schema": "./hello/schema.json"
+    },
+    "crud": {
+      "description": "A CRUD schematic.",
+      "factory": "./crud/index#crud",
+      "schema": "./crud/schema.json"
     }
   }
 }

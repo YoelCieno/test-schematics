@@ -9,6 +9,8 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noEmitOnError": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
@@ -29,6 +31,7 @@
     "src/**/*",
   ],
   "exclude": [
-    "src/*/files/**/*"
+    "src/*/files/**/*",
+    "src/test.ts"
   ]
 }
