@@ -14,14 +14,9 @@ export function crud(_options: CrudSchematics): Rule {
     const sourceParametrizedTemplates = apply(sourceTemplates, [
       template({
         ..._options,
-        ...strings,
-        addExclamation
+        ...strings
       })
     ])
-    
-    function addExclamation(value: string): string {
-      return value + '!';
-    }
 
     return mergeWith(sourceParametrizedTemplates)(tree, _context);
   };

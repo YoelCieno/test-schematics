@@ -12,6 +12,10 @@
         "index": 0
       },
       "x-prompt": "What verb do we want to use?"
+    },
+    "transform": {
+      "type": "boolean",
+      "default": "false"
     }
   },
   "required": [
