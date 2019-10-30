@@ -6,7 +6,7 @@
     "build": "tsc -p tsconfig.json",
     "build:watch": "tsc -p tsconfig.json --watch",
     "test": "npm run build && jasmine src/**/*_spec.js",
-    "dts:schema": "npx -p dtsgenerator dtsgen schema.json -o schema.d.ts"
+    "dts": "npx dtsgenerator -o"
   },
   "keywords": [
     "schematics"
