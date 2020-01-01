@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema",
+  "$schema": "http://json-schema.org/draft-06/schema",
   "id": "CrudSchematics",
   "title": "CRUD Options Schema",
   "description": "First crud",
@@ -15,7 +15,7 @@
     },
     "transform": {
       "type": "boolean",
-      "default": "false"
+      "default": false
     }
   },
   "required": [
